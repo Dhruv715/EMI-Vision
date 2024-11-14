@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EMI Vision - Calculate your EMI easily with our EMI calculator. Get the total amount and monthly installments in a few clicks.">
+    <meta name="keywords" content="EMI Calculator, loan EMI, personal loan calculator, home loan EMI, finance planning">
+    <meta name="author" content="EMI Vision">
+    <meta property="og:title" content="EMI Vision - EMI Calculator">
+    <meta property="og:description" content="Calculate your loan EMI in seconds with EMI Vision. Get the exact monthly installments and total payable amount for your loan.">
+    <meta property="og:image" content="/favicon/android-chrome-192x192.png"> <!-- Add an image link -->
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="website">
+    <title>EMI Vision - EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon/android-chrome-192x192.png" type="image/x-icon"> <!-- Favicon added -->
+    <!-- Add Google AdSense Script (Replace with your own script) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>EMI Vision</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">EMI Calculator</a></li> <!-- Added link to the calculator page -->
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- EMI Calculator Section -->
+    <section class="calculator">
+        <div class="container">
+            <h2>EMI Calculator</h2>
+            <form id="emi-form">
+                <div class="input-group">
+                    <label for="loan-amount">Loan Amount</label>
+                    <input type="number" id="loan-amount" placeholder="Enter loan amount" required>
+                </div>
+                <div class="input-group">
+                    <label for="interest-rate">Interest Rate (%)</label>
+                    <input type="number" id="interest-rate" placeholder="Enter interest rate" required>
+                </div>
+                <div class="input-group">
+                    <label>Loan Tenure</label>
+                    <input type="number" id="loan-tenure" placeholder="Enter loan tenure" required>
+                    <label for="tenure-months" class="select-radio">
+                        <input type="radio" name="tenure-unit" id="tenure-months" value="months" checked> Months
+                    </label>
+                    <label for="tenure-years" class="select-radio">
+                        <input type="radio" name="tenure-unit" id="tenure-years" value="years"> Years
+                    </label>
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="calculate-emi">Calculate EMI</button>
+                    <button type="reset" id="reset-form">Reset</button>
+                </div>
+            </form>
+
+            <div id="emi-result" class="result">
+                <p>EMI: <span id="emi-value">-</span></p>
+                <p>Total Interest Payable: <span id="interest-payable">-</span></p>
+                <p>Total of Payments (Principal + Interest): <span id="total-amount">-</span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Google AdSense Banner -->
+    <section class="ads">
+        <div class="container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EMI Vision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
